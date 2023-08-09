@@ -30,6 +30,18 @@
     height: 400px;
   }
 }
+@media screen and (max-width: 500px) {
+  .app__navbar-logo {
+    position: relative;
+    right: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .app__navbar-logo {
+    position: relative;
+    right: 75px;
+  }
+}
 
 .app__navbar-links {
   flex: 1;

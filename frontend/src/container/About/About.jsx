@@ -24,23 +24,39 @@ const About = () => {
       </h2>
 
       <div className="app__profiles">
-        {abouts.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: "tween" }}
-            className="app__profile-item"
-            key={about.title + index}
-          >
-            <img src={urlFor(about.imgUrl)} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {about.title}
-            </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {about.title}
-            </p>
-          </motion.div>
-        ))}
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.5, type: "tween" }}
+          className="app__profile-item"
+        >
+          <h2 className="app__profile-title" style={{ marginTop: 20 }}>
+            Hay there! I am{" "}
+            <span style={{ color: "var(--secondary-color)" }}>Egor</span>,
+            <br /> web developer and a computer science student!
+          </h2>
+          <p className="app__profile-text" style={{ marginTop: 10 }}>
+            I have 4 years of development and almost a year of web development.
+            And almost a year of web development I am communicative and a quick
+            learner I like and I want to make responsive and good-looking modern
+            designs. I have experience in frontend development using
+            technologies such as HTML, CSS/SASS/SCSS, JavaScript/TypeScript,
+            React, Redux, RTK Query, tailwind and etc. I also have experience in
+            developing many other areas, from MicroShell (some kind of native
+            Linux shell) in C and SecureNotepad (using modern encryption
+            methods) in Kotlin/Java to Spotify voice control in Python using
+            NLP. At the same time I have many years of experience creating games
+            and dance music.
+          </p>
+        </motion.div>
+        <motion.div
+          whileInView={{ opacity: 1 }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.5, type: "tween" }}
+          className="app__profile-item"
+        >
+          <img src={images.myProfile} alt="Hey" />
+        </motion.div>
       </div>
     </>
   );
